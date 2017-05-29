@@ -6,7 +6,7 @@ ADD . /app
 
 RUN pip install -r requirements.txt
 
-EXPOSE 3000
+EXPOSE 80
 
 ENV MY_ENV_VARIABLE World
 

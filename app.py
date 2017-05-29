@@ -18,6 +18,7 @@ def hello():
     html = "<h3>Hello {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Visits:</b> {visits}"
+
     return html.format(
         name=os.getenv("MY_ENV_VARIABLE", "world"),
         hostname=socket.gethostname(),
@@ -25,4 +26,4 @@ def hello():
     )
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=3000)
